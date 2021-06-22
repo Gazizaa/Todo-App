@@ -12,7 +12,7 @@ function App() {
         let data = {
             task: value
         }
-        axios.post('http://localhost:3000/tasks', (data)) 
+        axios.post('http://localhost:3001/tasks', (data)) 
         .then((response) => {
             console.log(response)
           })
@@ -24,7 +24,7 @@ function App() {
   }
     
   const getTask = () => {
-        axios.get('http://localhost:3000/tasks')
+        axios.get('http://localhost:3001/tasks')
         .then((response) => {
             console.log(response)
         setLists(response.data);
@@ -37,7 +37,7 @@ function App() {
 
 
   const deleteTask = (id) => {
-        axios.delete('http://localhost:3000/tasks/' + id)
+        axios.delete('http://localhost:3001/tasks/' + id)
         .then (() => {
           getTask()
         })
