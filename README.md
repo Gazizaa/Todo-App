@@ -1,7 +1,7 @@
 # To Do List App
 ## Потестить можно здесь: [ссылка](https://react-app-todoo.herokuapp.com/)
 
-Список задач с помощью ReactJS + React Hooks. Данные сохранены в db.json.
+Список дел имеет возможность добавления и удаления задачи. Данные сохранены в db.json.
 
 Stack:
 
